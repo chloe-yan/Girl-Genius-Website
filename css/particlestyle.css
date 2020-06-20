@@ -1,0 +1,15 @@
+#particles-js {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+    background-image: linear-gradient(to bottom, #E796B6, #F1A5A4);  
+  a9dff8background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+}
