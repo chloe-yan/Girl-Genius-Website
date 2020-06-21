@@ -8,9 +8,9 @@
   
 }
 
-#atgg {
-  color: #db7093;
-  margin-top: 15%;
+.atgg {
+/*   color: #2C80C8; */
+  margin-top: 5%;
 }
 
 .ggintro{
@@ -19,8 +19,7 @@
 }
 
 #about {
-/*   background-color: #F8F8F8; */
-  padding: 1%;
+ margin-bottom: -3%; 
 }
 .aboutbutton{
   background-color: #db7093;
@@ -34,10 +33,14 @@
   padding: 2%;
 }
 
+#headertext: hover{
+  text-shadow: 20px 20px 8px #000000;
+}
+
 header {
   position: relative;
   background-color: black;
-  height: 90vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -85,7 +88,206 @@ header .overlay {
 
 #intro{
   padding: 5%;
+  background-color: #d4f0fd;
 }
+
+#tickets{
+  background-color: #ccaef4;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column100 {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row100:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#faqs {
+  padding: 7%;
+  background-color: #ffcce1;
+}
+
+#sponsorus {
+  padding: 4%;
+}
+
+#event1{
+  background-color: #e9e3f4;
+  padding: 1%;
+}
+
+#event1:hover{
+    text-shadow: 2px 2px 5px purple;
+}
+
+#event2{
+   background-color: #ded5ef;
+  padding: 1%;
+}
+
+#event3{
+   background-color: #d3c7e9;
+  padding: 1%;
+}
+
+#event4{
+   background-color: #c7b8e4;
+  padding: 1%;
+}
+
+#event5{
+   background-color: #bcaade;
+  padding: 1%;
+}
+
+#event6{
+   background-color: #b19cd9;
+  padding: 1%;
+}
+
+#event7{
+  background-color: #a68ed4;
+  padding: 1%;
+}
+
+#event8{
+  background-color: #9b80ce;
+  padding: 1%;
+}
+
+
+
+.column200 {
+  float: left;
+  width: 20%;
+  padding: 1%;
+}
+
+/* Clear floats after the columns */
+.row200:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column200 {
+    width: 100%;
+  }
+}
+
+/* TEAM */
+.circle {
+  height: 70%;
+  width: 70%;
+/*   border: 3px solid black; */
+  border-radius: 50%;
+  transition: 0.3s;
+  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.circle:hover {
+  transform: scale(1.1);
+}
+
+.teamsocials {
+  display: inline-block;
+  width: 7%;
+  height: 7%;
+  margin: 1%;
+}
+.teamnames {
+  font-weight: 500;
+  margin-top: 7%;
+  color: #000;
+  
+}
+.teamdescriptions {
+  margin: 2%;
+  color: #000000;
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 1%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+.sponsorsimages { 
+  max-width: 75% !important;
+    width: 75% !important;
+    height: auto !important;
+    padding-bottom: 6vw;
+/*  height: 80%;
+  width: 80%;  */
+  transition: 0.3s;
+  padding-bottom: 5vw;
+  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.sponsorsimages:hover {
+  transform: scale(1.1);
+}
+.sponsors {
+      padding: 2vw;
+    vertical-align: middle;
+/*   margin: 2%;
+  padding: 1%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,6 +302,7 @@ header .overlay {
   position: relative;
   margin: auto;
 }
+
 
 /* Hide the images by default */
 .mySlides {
@@ -255,7 +458,7 @@ header .overlay {
     padding-right: 10rem;
 }
  .pink-bold{
-     color: palevioletred;
+     color: #2C80C8;
 
  }
  .btn-primary,
@@ -357,7 +560,7 @@ header .overlay {
 
 .navbar.scrolled {
     background: rgb(240,151,149); /* IE */
-    background: #E796B6; /* NON-IE */
+    background: #000; /* NON-IE */
 }
 
 .navbar {
@@ -462,3 +665,7 @@ a.nav-link {
      color: white;
 }
 
+.header-logo {
+    position: relative;
+    top: -6px; 
+}
