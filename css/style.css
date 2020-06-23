@@ -1,7 +1,15 @@
-
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Sofia Pro', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 500;
+}
+
+@import url(//db.onlinewebfonts.com/c/9e00143409affcb46a1ae58634aa64be?family=Sofia+Pro);
+
+@font-face {font-family: "Sofia Pro"; src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot"); src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg"); }
 
 .container1 {
   margin: 2%;
@@ -10,6 +18,7 @@
 
 .atgg {
 /*   color: #2C80C8; */
+font-size: 300%;
   margin-top: 5%;
 }
 
@@ -19,7 +28,7 @@
 }
 
 #about {
- margin-bottom: -3%; 
+ margin: 3%; 
 }
 .aboutbutton{
   background-color: #db7093;
@@ -33,7 +42,7 @@
   padding: 2%;
 }
 
-#headertext: hover{
+#headertext:hover{
   text-shadow: 20px 20px 8px #000000;
 }
 
@@ -88,26 +97,22 @@ header .overlay {
 
 #intro{
   padding: 5%;
-  background-color: #d4f0fd;
+  background: #D4F0FD;
 }
 
 #tickets{
-  background-color: #ccaef4;
+  //background-color: #ccaef4;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  padding-top: -10px;
 }
 
+.enable-to-tickets {
+  background-color: linear-gradient(#fff, #ccaef4);
+
+}
 /* Create two unequal columns that floats next to each other */
-.column100 {
-  float: left;
-  padding: 10px;
-}
-
-.left {
-  width: 40%;
-}
-
-.right {
-  width: 60%;
-}
 
 /* Clear floats after the columns */
 .row100:after {
@@ -119,7 +124,7 @@ header .overlay {
 
 #faqs {
   padding: 7%;
-  background-color: #ffcce1;
+  background-color: #F8D2D2;
 }
 
 #sponsorus {
@@ -174,7 +179,7 @@ header .overlay {
 
 .column200 {
   float: left;
-  width: 20%;
+  width: 25%;
   padding: 1%;
 }
 
@@ -187,14 +192,12 @@ header .overlay {
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column200 {
-    width: 100%;
+    width: 50%;
   }
 }
 
 /* TEAM */
 .circle {
-  height: 70%;
-  width: 70%;
 /*   border: 3px solid black; */
   border-radius: 50%;
   transition: 0.3s;
@@ -239,15 +242,76 @@ header .overlay {
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column2 {
+    width: 50%;
+  }
+  .circle {
+    width: 50%;
+  }
+  .sponsorsimages {
     width: 100%;
   }
+  .top-header {
+    font-size: 3.6rem;
+  }
+  .conference-team-header {
+    font-size: 3rem;
+  }
+  .learn-build {
+    font-size: 3rem;
+    padding: 20px;
+  }
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
 }
+@media screen and (min-width: 600px) {
+  .circle {
+    width: 70%;
+  }
+  .sponsorsimages {
+    width: 100%;
+  }
+  .team {
+   padding: 50px;
+  }
+  .sponsors {
+    padding: 50px;
+  }
+  .top-header {
+    font-size: 5rem;
+  }
+  .conference-team-header {
+    font-size: 400%;
+  }
+  .learn-build {
+    font-size: 360%;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  .column100 {
+    float: left;
+    padding: 10px;
+  }
+  .left {
+    width: 40%;
+  }
+  .right {
+    width: 60%;
+  }
+  .show-mobile {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
+} 
 
 .sponsorsimages { 
-  max-width: 75% !important;
-    width: 75% !important;
-    height: auto !important;
     padding-bottom: 6vw;
+    padding: 30px;
 /*  height: 80%;
   width: 80%;  */
   transition: 0.3s;
@@ -261,7 +325,6 @@ header .overlay {
   transform: scale(1.1);
 }
 .sponsors {
-      padding: 2vw;
     vertical-align: middle;
 /*   margin: 2%;
   padding: 1%; */
@@ -504,7 +567,7 @@ header .overlay {
  }
  .header-text {
     font-family: 'Work Sans', sans-serif;
-    font-size: 2rem;
+    padding: 30px;
  }
  .header-btns {
      padding-top: 3rem;
@@ -539,7 +602,6 @@ header .overlay {
  }
 
  .header-text {
-     font-size: 5rem;
      color: white;
  }
 
@@ -590,7 +652,7 @@ a.nav-link {
 
 
 .jumbotron{
-    background-image: url(../img/jumbo-bg.JPG); no-repeat center center; 
+    background-image: url(../img/jumbo-bg.JPG); no-repeat: center center; 
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -669,3 +731,49 @@ a.nav-link {
     position: relative;
     top: -6px; 
 }
+
+.hover_img a { position:relative; }
+.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a:hover span { display:block; }
+
+
+.gallerycontainer{
+position: relative;
+}
+
+.thumbnail img{
+  margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+padding: 5px;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+  width: 200px;
+  float: right;
+  background-image: "https://cdn.glitch.com/9a69f7f7-63a6-4a5a-8dfd-05cfd800e732%2Fflag-standalone.png?v=1592649400479";
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 0;
+left: 230px; /*position where enlarged image should offset horizontally */
+z-index: 50;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
